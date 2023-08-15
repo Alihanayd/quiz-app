@@ -8,17 +8,23 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "vue": "^2.6.14",
-    "vue-router": "^3.5.1"
+    "vue-axios": "^3.5.2",
+    "vue-router": "^3.5.1",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "autoprefixer": "^10.4.14",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "postcss": "^8.4.24",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
+    "tailwindcss": "^3.3.2",
     "vue-template-compiler": "^2.6.14"
   }
 }
