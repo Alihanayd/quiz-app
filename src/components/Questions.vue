@@ -4,6 +4,12 @@
       <div>
         <p>{{ question.question }}</p>
       </div>
+
+      <div v-for="(answer, index) in question.options" :key="index">
+        <input type="radio" :id="index + '_' + question.id" :name="question.id" :value="answer.correct"/>
+        <label :for="index + '_' + question.id">{{ answer.answer }}</label>
+      </div>
+
     </div>
   </div>
 </template>
@@ -16,7 +22,7 @@ export default {
     };
   },
   mounted() {
-    this.$store.state.questions = this.questions;
+    this.questions = this.$store.getters['questions/getQuestions'];
   },
 };
 </script>
